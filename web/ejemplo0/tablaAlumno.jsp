@@ -31,13 +31,31 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <style>
+            .cabecera{
+                border: none;
+                text-align: center;
+                outline: none;
+                color: white;
+                background: black;
+                width: 12%;
+            }
+            .cuerpo{
+                border: none;
+                text-align: center;
+                outline: none;
+                color: blue;
+                width: 12%;
+                
+            }
+        </style>
     </head>
     <body>
         <h1>MOSTRAR TODOS LOS DOCUMENTOS DE LA COLECCIÓN ALUMNOS</h1>
-        <input type="text" value="idAlumno" style="border:none; text-align:center" readonly/>
-            <input type="text" value="nombre" style="border:none; text-align:center" readonly/>
-            <input type="text" value="edad" style="border:none; text-align:center" readonly/>
-            <input type="text" value="estatura" style="border:none; text-align:center" readonly/><br>
+        <input type="text" value="IDALUMNO" class="cabecera" readonly/>
+            <input type="text" value="NOMBRE" class="cabecera" readonly/>
+            <input type="text" value="EDAD" class="cabecera" readonly/>
+            <input type="text" value="ESTATURA" class="cabecera" readonly/><br>
         <%
             String idAlumno = "";
             String nombre = "";
@@ -53,10 +71,10 @@
                     edad = doc.getInteger("edad");
                     estatura = doc.getDouble("estatura");
          %>
-            <input type="text" value="<%=idAlumno%>"/>
-            <input type="text" value="<%=nombre%>"/>
-            <input type="text" value="<%=edad%>"/>
-            <input type="text" value="<%=estatura%>"/><br>
+            <input type="text" value="<%=idAlumno%>" class="cuerpo" readonly/>
+            <input type="text" value="<%=nombre%>" class="cuerpo" readonly/>
+            <input type="text" value="<%=edad%>" class="cuerpo" readonly/>
+            <input type="text" value="<%=estatura%>" class="cuerpo" readonly/><br>
            
          
          <%           
