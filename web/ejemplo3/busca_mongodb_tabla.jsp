@@ -52,6 +52,8 @@
             }
             div{
                 text-align: center;
+            }
+            h1{
                 color: red;
                 font-family: Courier New;
                 font-size: 16px;
@@ -60,12 +62,28 @@
     </head>
     <body>
         <div>
-            <h1>MOSTRAR TODOS LOS DOCUMENTOS DE LA COLECCIÓN ALUMNOS</h1>
+            <h1>BUSCAR UN DOCUMENTO EN LA COLECCIÓN ALUMNOS</h1>
+            <%--COMPONENTE JAVA --%>
+            
+            
+            
+            
+            
+            <%-- COMPONENTE VISTA(HTML) --%>
+            <form>
+                <!--ENTRADA -->
+                <input type="text" name="txtId"/>
+                <!--ACCION -->
+                <input type="submit" value="BUSCAR "name="cmdBuscar"/>
+            </form>
+            
+            
             <input type="text" value="IDALUMNO" class="cabecera" readonly/>
             <input type="text" value="NOMBRE" class="cabecera" readonly/>
             <input type="text" value="EDAD" class="cabecera" readonly/>
             <input type="text" value="ESTATURA" class="cabecera" readonly/><br>
-            <%            String idAlumno = "";
+            
+            <%  String idAlumno = "";
                 String nombre = "";
                 int edad = 0;
                 double estatura = 0.0;
