@@ -65,7 +65,8 @@
             <input type="text" value="NOMBRE" class="cabecera" readonly/>
             <input type="text" value="EDAD" class="cabecera" readonly/>
             <input type="text" value="ESTATURA" class="cabecera" readonly/><br>
-            <%            String idAlumno = "";
+            <%            
+                String idAlumno = "";
                 String nombre = "";
                 int edad = 0;
                 double estatura = 0.0;
