@@ -71,10 +71,7 @@
             
             <%-- COMPONENTE VISTA(HTML) --%>
             <form>
-                <!--ENTRADA -->
-                <input type="text" name="txtId"/>
-                <!--ACCION -->
-                <input type="submit" value="BUSCAR "name="cmdBuscar"/>
+               
             </form>
             
             
@@ -93,9 +90,9 @@
                         //out.println(doc.toJson()+"<br>");
                         //out.println("ID: " + doc.getString("alumno"));
                         idAlumno = doc.getString("idAlumno");
-                        nombre = doc.getString("nombre");
-                        edad = doc.getInteger("edad");
-                        estatura = doc.getDouble("estatura");
+                         nombre = doc.getString("nombre") != null ? doc.getString("nombre") : "No disponible";
+                         edad = doc.getInteger("edad") + "" != null ? doc.getInteger("edad") : 0;
+                         estatura = doc.getDouble("estatura") + "" != null ? doc.getDouble("estatura"): 0.0;
             %>
             <input type="text" value="<%=idAlumno%>" class="cuerpo" readonly/>
             <input type="text" value="<%=nombre%>" class="cuerpo" readonly/>
@@ -110,5 +107,6 @@
             %>
 
         </div>
+            <a href="../index.jsp">IR A LA PÁGINA PRINCIPAL</a
     </body>
 </html>
