@@ -4,7 +4,21 @@
     Author     : Jorge
 --%>
 
+<%@page import="com.mongodb.client.MongoCollection"%>
+<%@page import="com.mongodb.MongoClient"%>
+<%@page import="org.bson.Document"%>
+<%@page import="com.mongodb.client.MongoDatabase"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%  // Connection with MongoDB
+    String databaseName = "campusfp";
+    String serverName = "localhost";
+    int puerto = 27017;
+
+    // Create MongoDB client
+    MongoClient mc = new MongoClient(serverName, puerto);
+    MongoDatabase database = mc.getDatabase(databaseName);
+    MongoCollection<Document> alumno = database.getCollection("alumno");
+%>
 <!DOCTYPE html>
 <html>
     <head>

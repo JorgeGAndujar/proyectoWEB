@@ -10,6 +10,7 @@
 <%@page import="com.mongodb.client.MongoDatabase"%>
 <%@page import="com.mongodb.MongoClient"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
