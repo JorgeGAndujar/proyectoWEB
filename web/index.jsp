@@ -29,6 +29,7 @@
         <h1>INDEX</h1>
         <a href="ejemplo3/busca_mongodb_tabla.jsp">MOSTRAR</a><br>
         <a href="ejemplo5/actualizar_por_idAlumnos.jsp">BUSCAR-ELIMINAR-ACTUALIZAR</a><br>
-        <a href="ejemplo6/insertar.jsp">INSERTAR</a>
+        <a href="ejemplo6/insertar.jsp">INSERTAR</a><br>
+        <a href="ejemplo7/otros_componentes.jsp">OTROS COMPONENTES</a>
     </body>
 </html>
