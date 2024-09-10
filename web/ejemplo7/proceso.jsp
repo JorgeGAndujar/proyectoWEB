@@ -21,6 +21,10 @@
             String[] pasatiempos = null;
             String codigoPais = "";
             String[] mascotas = null;
+            String correo = "";
+            String telefono = "";
+            String hora = "";
+            String fechaHora = "";
             if (request.getParameter("cmdEnviar") != null) {
                 nombre = request.getParameter("txtNombre");
                 clave = request.getParameter("txtClave");
@@ -29,6 +33,10 @@
                 pasatiempos = request.getParameterValues("chbPasatiempo");//values para varios datos
                 codigoPais = request.getParameter("cboCodigoPais");
                 mascotas = request.getParameterValues("lstMascota");
+                correo = request.getParameter("micorreo");
+                telefono = request.getParameter("miTelefono");
+                hora= request.getParameter("txtHora");
+                fechaHora = request.getParameter("txtFechaHora");
             }
         %>
         <input type="text" value="<%=nombre%>" />
@@ -83,6 +91,22 @@
                 out.println("</select>");
             }
         %>
+        
+        <br><br><!-- comment -->
+        
+        correo: <%=correo%>
+        
+        <br><br><!-- comment -->
+        
+        telefono: <%=telefono%>
+        <br><br>
+        
+        hora: <%=hora%>
+        <br><br>
+        
+        fechaHora: <%=fechaHora%>
+        <br><br>
+        
         <a href="otros_componentes.jsp">VOLVER AL FORMULARIO</a>
     </body>
 </html>

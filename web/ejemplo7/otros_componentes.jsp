@@ -47,7 +47,7 @@
             </select>
         </p>
         <p>
-            6. Lista de selección multiple
+            7. Lista de selección multiple
             <select name="lstMascota" multiple="true" size="3">
                 <option value="Gato">Gato</option>
                 <option value="Perro">Perro></option>
@@ -55,6 +55,58 @@
                 <option value="Lince">Lince</option>
                 <option value="Cobaya">Cobaya</option> 
             </select>
+        </p>
+        <p>
+            8. Ingrese su correo
+            <input type="email" 
+                   pattern=".+@gmail.com"
+                   size="18"
+                   placeholder="usuario@gmail.com"
+                   minlength="18"
+                   maxlength="18"
+                   list="listaEmailPorDefecto"
+                   name="micorreo"
+                   requiered />
+            <datalist id="listaEmailPorDefecto">
+                <option value="jorge@gmail.com">
+                <option value="ismael@gmail.com">
+                <option value="jose@gmail.com">
+                <option value="raul@gmail.com">
+            </datalist>
+        </p>
+        <p>
+            9. Ingrese su teléfono
+            <input type="tel"
+                   name="miTelefono"
+                   id="txtTelefono"
+                   pattern="[0-9]{9,9}"
+                   size="9"
+                   placeholder ="xxxxxxxxx"
+                   minlength="9"
+                   maxlength="9"
+                   list="listaTelefonosPorDefecto"
+                   requiered >
+            <datalist id="listaTelefonosPorDefecto"
+                   <option value="654666383">
+                   <option value="625566383">
+                   <option value="634111383">
+                   <option value="654662313">
+                   <option value="624243832">
+            </datalist>
+        <p>
+            10. Elija una hora de reunion entre las 9:00 y 18:00 horas
+            <label for="lblReunion" </label>
+            <input type="time"
+                   name="txtHora"
+                   min="9:00"
+                   max="18:00"
+                   id="lblReunion"
+                   requiered >
+        </p>
+        <p>
+            11.Elija una fecha, hora y minutos para su cita
+             <label for="lblFechaHora" </label>
+             <input type="datetime-local" id="txtFechaHora" name="txtFechaHora"
         </p>
         <p>
             <input type="submit" name="cmdEnviar" />
