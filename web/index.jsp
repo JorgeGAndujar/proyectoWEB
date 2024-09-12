@@ -31,7 +31,8 @@
         <a href="ejemplo5/actualizar_por_idAlumnos.jsp">BUSCAR-ELIMINAR-ACTUALIZAR</a><br>
         <a href="ejemplo6/insertar.jsp">INSERTAR</a><br>
         <a href="ejemplo7/otros_componentes.jsp">OTROS COMPONENTES</a><br>
-        <a href="ejemplo7/calculadora.jsp">CALCULADORA</a>
+        <a href="ejemplo7/calculadora.jsp">CALCULADORA</a><br>
+        <a href="ejemplo7/formulario.jsp">FORMULARIO</a>
         
     </body>
 </html>
