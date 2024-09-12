@@ -32,7 +32,7 @@
         <a href="ejemplo6/insertar.jsp">INSERTAR</a><br>
         <a href="ejemplo7/otros_componentes.jsp">OTROS COMPONENTES</a><br>
         <a href="ejemplo7/calculadora.jsp">CALCULADORA</a><br>
-        <a href="ejemplo7/formulario.jsp">FORMULARIO</a>
-        
+        <a href="ejemplo7/formulario.jsp">FORMULARIO</a><br>
+        <a href="ejemplo7/mostrar_basededatos.jsp">MOSTRAR BASE DE DATOS</a>
     </body>
 </html>

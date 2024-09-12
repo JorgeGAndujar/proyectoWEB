@@ -40,7 +40,7 @@
         <h1>REGISTRAR FORMULARIO</h1>
         <form action="procesar_formulario.jsp">
             
-            1.Nombre Apellido Cliente: <input type="text" name="txtNombre" required/>
+            1.Nombre Apellido Cliente: <input type="text" name="txtNombre" required/><br>
             
             2. Lista de selección multiple mascotas:
             <select name="lstMascota" multiple="true" size="3" required>
@@ -79,8 +79,29 @@
             %>
             <br>
             5.Selecione correo <input type="text" name="txtCorreo" size="100" required/><br>
-            6.Selecione sexo <input type="text" name="txtSexo" size="1" required /><br>
+            
+            6.Selecione sexo 
+            <p>
+                <input type="radio" name="txtSexo" value="H" />HOMBRE
+                <input type="radio" name="txtSexo" value="M" />MUJER
+          
+            </p>
+            
             7.Selecione telefono <input type="number" name="txtTelefono" size="9" required /><br>
+            
+            8.Seleccione fecha y Hora
+            <p>
+             <label for="lblFechaHora"> </label>
+             <input type="datetime-local" id="txtFechaHora" name="txtFechaHora" required /><br>
+            </p>
+            9.Seleccioone Clave
+            <p>
+             <input type="password" id="txtClave1" name="txtClave1" required /><br>
+            </p>
+            9.Seleccioone autorizacion
+            <p>
+             <input type="checkbox" name="chbAutorizacion" required /><br>
+            </p>
             
             <input type="submit" name="cmdRegistrar" value="REGISTRAR" />
         </form>

@@ -35,7 +35,9 @@
             String correo = request.getParameter("txtCorreo");
             String sexo = request.getParameter("txtSexo");
             String telefono = request.getParameter("txtTelefono");
-          
+            String fechaHora = request.getParameter("txtFechaHora");
+            String clave1 = request.getParameter("txtClave1");
+            String autorizacion = request.getParameter("chbAutorizacion");
         %>
 
         <%=nombreApellido%><br><!-- comment -->
@@ -44,12 +46,15 @@
         <%=Arrays.toString(pasatiempos)%><br>
         <%=correo%><br>
         <%=sexo%><br>
-        <%=telefono%>
+        <%=telefono%><br>
+        <%=fechaHora%><br>
+        <%=clave1%>
+        <%=autorizacion%>
 
         <%
             try {
-                String query = "INSERT INTO cliente(idCliente,nombreApellido,mascota,pais,pasatiempos,correo,sexo,telefono)"
-                        + "VALUE (NULL,?,?,?,?,?,?,?)";
+                String query = "INSERT INTO cliente(idCliente,nombreApellido,mascota,pais,pasatiempos,correo,sexo,telefono,fechaHora,clave,autorizacion)"
+                        + "VALUE (NULL,?,?,?,?,?,?,?,?,?,?)";
                 PreparedStatement ps = conexion.prepareStatement(query);
                 
                 ps.setString(1, nombreApellido);
@@ -68,6 +73,13 @@
                 ps.setString(6, sexo);
                 
                 ps.setString(7, telefono);
+                
+                ps.setString(8, fechaHora);
+     
+                ps.setString(9, clave1);
+                
+                boolean autorizar = (autorizacion != null && autorizacion.equals("on"));
+                ps.setBoolean(10, autorizar); 
 
                 ps.executeUpdate();
                 out.println("OK: INSERT");
