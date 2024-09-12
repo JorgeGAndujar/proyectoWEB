@@ -74,7 +74,7 @@
                 </tr>
             </thead>
             <tbody>
-                <%                
+                <% 
                     String sql = "SELECT * FROM cliente";
                     PreparedStatement ps = conexion.prepareStatement(sql);
                     ResultSet rs = ps.executeQuery();
@@ -95,9 +95,10 @@
                             out.println("</tr>");
                         }
                     } catch (Exception e) {
-                    
+
                     }
                 %>
+                
             </tbody>
         </table>
     </body>
