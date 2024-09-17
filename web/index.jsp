@@ -33,6 +33,7 @@
         <a href="ejemplo7/otros_componentes.jsp">OTROS COMPONENTES</a><br>
         <a href="ejemplo7/calculadora.jsp">CALCULADORA</a><br>
         <a href="ejemplo7/formulario.jsp">FORMULARIO</a><br>
-        <a href="ejemplo7/mostrar_basededatos.jsp">MOSTRAR BASE DE DATOS</a>
+        <a href="ejemplo7/mostrar_basededatos.jsp">MOSTRAR BASE DE DATOS</a><br>
+        <a href="ejemplo10/mi_delete_update.jsp">BORRAR Y ACTUALIZAR</a>
     </body>
 </html>
