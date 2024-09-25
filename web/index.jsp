@@ -34,6 +34,8 @@
         <a href="ejemplo7/calculadora.jsp">CALCULADORA</a><br>
         <a href="ejemplo7/formulario.jsp">FORMULARIO</a><br>
         <a href="ejemplo7/mostrar_basededatos.jsp">MOSTRAR BASE DE DATOS</a><br>
-        <a href="ejemplo10/mi_delete_update.jsp">BORRAR Y ACTUALIZAR</a>
+        <a href="ejemplo10/mi_delete_update.jsp">BORRAR Y ACTUALIZAR</a><br>
+        <a href="ejemplo11/mostrar_cliente_mayor_gasto.jsp">CLIENTE MAYOR GASTO</a>
+        
     </body>
 </html>
