@@ -33,8 +33,8 @@ public class Crud {
             String query = "SELECT idUsuario, nombre, login, CAST(AES_DECRYPT(clave,CONCAT(obtener_palabra_secreta(),'%')) AS CHAR)AS NOMBRECOLUMNA FROM Usuario";
             PreparedStatement ps = conexion.prepareStatement(query);
             ResultSet rs = ps.executeQuery();
-            String[] registro = new String[4];
             while (rs.next()) {
+                String[] registro = new String[4];
                 registro[0] = rs.getInt("idUsuario") + "";
                 registro[1] = rs.getString("nombre");
                 registro[2] = rs.getString("login");
