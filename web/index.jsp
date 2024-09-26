@@ -35,7 +35,9 @@
         <a href="ejemplo7/formulario.jsp">FORMULARIO</a><br>
         <a href="ejemplo7/mostrar_basededatos.jsp">MOSTRAR BASE DE DATOS</a><br>
         <a href="ejemplo10/mi_delete_update.jsp">BORRAR Y ACTUALIZAR</a><br>
-        <a href="ejemplo11/mostrar_cliente_mayor_gasto.jsp">CLIENTE MAYOR GASTO</a>
+        <a href="ejemplo11/mostrar_cliente_mayor_gasto.jsp">CLIENTE MAYOR GASTO</a><br>
+        <a href="ejemplo12/registrar_usuario.jsp">REGISTRAR USUARIO</a><br>
+        <a href="ejemplo12/mostrar_usuarios.jsp">MOSTRAR USUARIOS</a><br>
         
     </body>
 </html>
