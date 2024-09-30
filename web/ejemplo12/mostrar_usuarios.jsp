@@ -10,14 +10,56 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
         <style>
-            
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            h1 {
+                text-align: center;
+                color: #333;
+                margin-bottom: 20px;
+            }
+
+            table {
+                width: 80%;
+                border-collapse: collapse;
+                margin: 0 auto;
+                background-color: #fff;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            table, th, td {
+                border: 1px solid #ddd;
+            }
+
+            th, td {
+                padding: 10px;
+                text-align: center;
+            }
+
+            th {
+                background-color: #4CAF50;
+                color: white;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr:hover {
+                background-color: #ddd;
+            }
         </style>
     </head>
     <body>
         <h1>MOSTRAR REGISTROS</h1>
-
-
-
         <table border="1">
             <thead>
                 <tr>

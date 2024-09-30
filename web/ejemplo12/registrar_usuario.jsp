@@ -7,13 +7,71 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>REGISTRAR USUARIO</title>
         <style>
-            form {
+          body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 80vh;
+                height: 100vh;
+            }
+
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+
+            form {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            label {
+                margin-top: 10px;
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: #333;
+            }
+
+            input[type="text"], input[type="password"] {
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                width: 100%;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+            }
+
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                margin-top: 10px;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+
+            #mensaje {
+                color: #555;
+                font-weight: bold;
+                background-color: #f4f4f4;
+                border: none;
+                margin-top: 10px;
             }
         </style>
     </head>
