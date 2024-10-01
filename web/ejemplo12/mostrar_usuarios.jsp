@@ -59,36 +59,37 @@
         </style>
     </head>
     <body>
-        <h1>MOSTRAR REGISTROS</h1>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>IDUSUARIO</th>
-                    <th>NOMBRE</th>
-                    <th>LOGIN</th>
-                    <th>CLAVE</th>
-                </tr>
-            </thead>
-            <tbody>
-                <%
-                    Connection conexion = ConexionMysqlBDEncriptar1.obtenerConexion();
-                    List<String[]> usuarios_al = Crud.obtenerTodosUsuarios(conexion);
+        <div>
+            <h1>MOSTRAR REGISTROS</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>IDUSUARIO</th>
+                        <th>NOMBRE</th>
+                        <th>LOGIN</th>
+                        <th>CLAVE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%
+                        Connection conexion = ConexionMysqlBDEncriptar1.obtenerConexion();
+                        List<String[]> usuarios_al = Crud.obtenerTodosUsuarios(conexion);
 
-                    for (String[] vector : usuarios_al) {
-                %>        
-                <tr>
-                    <td><%=vector[0]%></td>
-                    <td><%=vector[1]%></td>
-                    <td><%=vector[2]%></td>
-                    <td><%=vector[3]%></td>
-                </tr>   
-                <%
-                    }
-                %>
+                        for (String[] vector : usuarios_al) {
+                    %>        
+                    <tr>
+                        <td><%=vector[0]%></td>
+                        <td><%=vector[1]%></td>
+                        <td><%=vector[2]%></td>
+                        <td><%=vector[3]%></td>
+                    </tr>   
+                    <%
+                        }
+                    %>
 
 
-            </tbody>
-        </table>
-
+                </tbody>
+            </table>
+        </div>
     </body>
 </html>
