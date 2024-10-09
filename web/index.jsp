@@ -38,6 +38,7 @@
         <a href="ejemplo11/mostrar_cliente_mayor_gasto.jsp">CLIENTE MAYOR GASTO</a><br>
         <a href="ejemplo12/registrar_usuario.jsp">REGISTRAR USUARIO</a><br>
         <a href="ejemplo12/mostrar_usuarios.jsp">MOSTRAR USUARIOS</a><br>
+        <a href="http://localhost:8080/PROYECTO_WEB_JAVA/MiServlet">MI SERVLET</a><br>
         
     </body>
 </html>
