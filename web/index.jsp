@@ -39,6 +39,7 @@
         <a href="ejemplo12/registrar_usuario.jsp">REGISTRAR USUARIO</a><br>
         <a href="ejemplo12/mostrar_usuarios.jsp">MOSTRAR USUARIOS</a><br>
         <a href="http://localhost:8080/PROYECTO_WEB_JAVA/MiServlet">MI SERVLET</a><br>
+        <a href="ejemplo13/llamar_servlet.jsp">LLAMAR SERVLET CON UN BOTÓN</a><br>
         
     </body>
 </html>
