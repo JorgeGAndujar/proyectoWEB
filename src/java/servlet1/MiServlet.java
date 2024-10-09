@@ -23,6 +23,7 @@ public class MiServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>BIENVENIDO A MI PRIMER SERVLET</h1>");
+            out.println("<br><a href='http://localhost:8080/PROYECTO_WEB_JAVA/index.jsp'>ATRAS</a><br>");
             out.println("</body>");
             out.println("</html>");
         }
