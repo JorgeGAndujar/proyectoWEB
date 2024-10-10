@@ -6,9 +6,11 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <form action="http://localhost:8080/PROYECTO_WEB_JAVA/Servlet2" method="POST">
-            <input type="text" name="txtNombre"/>
-            <input type="submit" value="ENVIAR" />
+        <form action="http://localhost:8080/PROYECTO_WEB_JAVA/JGA" method="POST">
+            <input type="text" name="txtNumero"/>
+            <input type="submit" name="operacion" value="RAIZ CUADRADA" />
+            <input type="submit" name="operacion" value="RAIZ CUBICA" />
+            <input type="submit" name="operacion" value="CUADRADO" />
         </form>
     </body>
 </html>
