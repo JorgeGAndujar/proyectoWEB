@@ -4,8 +4,16 @@
         <servlet-name>MiServlet</servlet-name>
         <servlet-class>servlet1.MiServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Servlet2</servlet-name>
+        <servlet-class>servlet2.Servlet2</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>MiServlet</servlet-name>
         <url-pattern>/MiServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Servlet2</servlet-name>
+        <url-pattern>/Servlet2</url-pattern>
     </servlet-mapping>
 </web-app>
