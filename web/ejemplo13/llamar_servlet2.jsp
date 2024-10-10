@@ -6,8 +6,9 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <form action="http://localhost:8080/PROYECTO_WEB_JAVA/Servlet2">
-            <input type="submit" value="LLAMAR SERVLET" />
+        <form action="http://localhost:8080/PROYECTO_WEB_JAVA/Servlet2" method="POST">
+            <input type="text" name="txtNombre"/>
+            <input type="submit" value="ENVIAR" />
         </form>
     </body>
 </html>
