@@ -16,7 +16,14 @@
         <servlet-name>Servlet2</servlet-name>
         <url-pattern>/JGA</url-pattern>
     </servlet-mapping>
-    
+    <servlet>
+        <servlet-name>Servlet3</servlet-name>
+        <servlet-class>servlet3.Servlet3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet3</servlet-name>
+        <url-pattern>/Servlet3</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30

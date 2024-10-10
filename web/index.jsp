@@ -41,6 +41,7 @@
         <a href="http://localhost:8080/PROYECTO_WEB_JAVA/MiServlet">MI SERVLET</a><br>
         <a href="ejemplo13/llamar_servlet.jsp">LLAMAR SERVLET CON UN BOTÓN</a><br>
         <a href="ejemplo13/llamar_servlet2.jsp">LLAMAR SERVLET2 CON UN BOTÓN</a><br>
+        <a href="ejemplo13/menu.jsp">MENU</a><br>
         
     </body>
 </html>
