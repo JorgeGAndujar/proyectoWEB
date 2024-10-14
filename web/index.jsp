@@ -42,6 +42,8 @@
         <a href="ejemplo13/llamar_servlet.jsp">LLAMAR SERVLET CON UN BOTÓN</a><br>
         <a href="ejemplo13/llamar_servlet2.jsp">LLAMAR SERVLET2 CON UN BOTÓN</a><br>
         <a href="ejemplo13/menu.jsp">MENU</a><br>
+        <a href="ejemplo14/postgresql.jsp">MOSTRAR REGISTROS TABLA POSTGRESQL</a><br>
+        
         
     </body>
 </html>

@@ -4,6 +4,10 @@
         <servlet-name>MiServlet</servlet-name>
         <servlet-class>servlet1.MiServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServerPostgresql</servlet-name>
+        <servlet-class>ejemplo14.ServerPostgresql</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>MiServlet</servlet-name>
         <url-pattern>/MiServlet</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>Servlet3</servlet-name>
         <url-pattern>/Servlet3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServerPostgresql</servlet-name>
+        <url-pattern>/ServerPostgresql</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
