@@ -19,7 +19,8 @@
     </head>
     <body>
         <h1>INSERTAR UN REGISTRO</h1>
-        <form action="">
+        <form action="http://localhost:8080/PROYECTO_WEB_JAVA/ServletCrud?opcion=1">
+            <input type="hidden" name="txtOpcion" value="1"/>
             PRODUCTO<br>
             <input type="text" name="txtNombre" placeholder="Ingrese Nombre"/><br>
             DATOS GENERALES DEL PRODUCTO<br>

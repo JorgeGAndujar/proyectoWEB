@@ -14,5 +14,7 @@
     <body>
         <h1>OPERACIONES CRUD POSTGRESQL</h1>
         <a href="create.jsp">INSERTAR UN REGISTRO CON JSON </a><br>
+        <a href="http://localhost:8080/PROYECTO_WEB_JAVA/ServletCrud?txtOpcion=2">MOSTRAR REGISTROS</a><br>
+        
     </body>
 </html>
