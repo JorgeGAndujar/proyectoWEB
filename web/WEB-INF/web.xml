@@ -8,6 +8,10 @@
         <servlet-name>ServerPostgresql</servlet-name>
         <servlet-class>ejemplo14.ServerPostgresql</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletCrud</servlet-name>
+        <servlet-class>ejemplo15.ServletCrud</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>MiServlet</servlet-name>
         <url-pattern>/MiServlet</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>ServerPostgresql</servlet-name>
         <url-pattern>/ServerPostgresql</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletCrud</servlet-name>
+        <url-pattern>/ServletCrud</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
