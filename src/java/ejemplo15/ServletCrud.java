@@ -18,6 +18,7 @@ public class ServletCrud extends HttpServlet {
             Connection conexion = ConexionPostgresqlTienda.obtenerConexion();
             if(conexion != null){
                 out.println("OK:CONEXION");
+               
             }else{
                 out.println("ERROR:CONEXION");
             }

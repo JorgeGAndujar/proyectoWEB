@@ -21,11 +21,11 @@
         <h1>INSERTAR UN REGISTRO</h1>
         <form action="">
             PRODUCTO<br>
-            <input type="text" name="txtNombre" placeholder="Ingrese nombre"/><br>
+            <input type="text" name="txtNombre" placeholder="Ingrese Nombre"/><br>
             DATOS GENERALES DEL PRODUCTO<br>
-            <input type="text" name="txtMarca" placeholder="Ingrese marca"/><br>
-            <input type="text" name="txtModelo" placeholder="Ingrese modelo"/><br>
-            <input type="text" name="txtPrecio" placeholder="Ingrese precio"/><br>
+            <input type="text" name="txtMarca" placeholder="Ingrese Marca"/><br>
+            <input type="text" name="txtModelo" placeholder="Ingrese Modelo"/><br>
+            <input type="text" name="txtPrecio" placeholder="Ingrese Precio"/><br>
             DATOS TECNICOS DEL PRODUCTO<br>
             <input type="text" name="txtPantalla" placeholder="Ingrese Pantalla"/><br>
             <input type="text" name="txtResolucion" placeholder="Ingrese Resolución"/><br>
