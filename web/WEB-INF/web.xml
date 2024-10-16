@@ -12,6 +12,10 @@
         <servlet-name>ServletCrud</servlet-name>
         <servlet-class>ejemplo15.ServletCrud</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletExamen</servlet-name>
+        <servlet-class>examen.ServletExamen</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>MiServlet</servlet-name>
         <url-pattern>/MiServlet</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>ServletCrud</servlet-name>
         <url-pattern>/ServletCrud</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletExamen</servlet-name>
+        <url-pattern>/ServletExamen</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
