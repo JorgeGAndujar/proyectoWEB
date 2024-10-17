@@ -71,8 +71,6 @@ public class OperacionesCrud {
                 String nombre = rs.getString("nombre");
                 String detalles = rs.getString("detalles");
 
-      
-
                 // Agregar el array a la lista
                 productos_al.add(nombre);
                 productos_al.add(detalles);
@@ -83,5 +81,54 @@ public class OperacionesCrud {
         }
         return productos_al;
     }
+
+    public static boolean eliminarProductos(Connection conexion, String nombreProducto) {
+        boolean bandera = true;
+        try {
+            String query = "DELETE FROM Producto WHERE nombre = ?";
+            PreparedStatement ps = conexion.prepareStatement(query);
+            ps.setString(1, nombreProducto);
+            int filaAfectada = ps.executeUpdate();
+
+            if (filaAfectada > 0) {
+                bandera = true;
+            } else {
+                bandera = false;
+            }
+        } catch (SQLException e) {
+            bandera = false;
+        }
+        return bandera;
+    }
+    public static boolean actualizarProductos(Connection conexion, String nombreN, String marcaN, String modeloN, double precioN, String pantallaN, String resolucionN, String nombreCondicion) {
+    boolean bandera = false; // Cambié el valor inicial a false
+    try {
+        // Consulta SQL de actualización
+        String query = "UPDATE Producto SET nombre = ?, marca = ?, modelo = ?, precio = ?, pantalla = ?, resolucion = ? WHERE nombre = ?";
+        PreparedStatement ps = conexion.prepareStatement(query);
+
+        // Asignar valores a los parámetros
+        ps.setString(1, nombreN);
+        ps.setString(2, marcaN);
+        ps.setString(3, modeloN);
+        ps.setDouble(4, precioN);
+        ps.setString(5, pantallaN);
+        ps.setString(6, resolucionN);
+        ps.setString(7, nombreCondicion); // Para la condición del WHERE
+
+        // Ejecutar actualización
+        int filasAfectadas = ps.executeUpdate();
+
+        // Verificar si se actualizó alguna fila
+        if (filasAfectadas > 0) {
+            bandera = true;
+        }
+    } catch (SQLException e) {
+        e.printStackTrace(); // Imprime la excepción para depuración
+        bandera = false;
+    }
+    return bandera;
+}
+
 
 }

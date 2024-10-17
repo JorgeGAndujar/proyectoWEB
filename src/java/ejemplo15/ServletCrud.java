@@ -44,25 +44,49 @@ public class ServletCrud extends HttpServlet {
                         break;
                     case "2":
                         List<String> productos_al = OperacionesCrud.mostrarProductos(conexion);
-                        for(String p: productos_al){
+                        for (String p : productos_al) {
                             out.println(p + "<br>");
                         }
+                        break;
+                    case "3":
+                        String delete = request.getParameter("txtNombre");
+                        boolean resultado = OperacionesCrud.eliminarProductos(conexion, delete);
+                        if (resultado) {
+                            out.println("OK: DELETE" + "<br>");
+                        } else {
+                            out.println("ERROR: DELETE" + "<br>");
+                        }
+                        break;
+                    case "4":
+                        String nombreN = request.getParameter("txtNombre");
+                        String marcaN = request.getParameter("txtMarca");
+                        String modeloN = request.getParameter("txtModelo");
+                        double precioN;
+                        try {
+                            precioN = Double.parseDouble(request.getParameter("txtPrecio"));
+                        } catch (NumberFormatException e) {
+                            out.println("ERROR: Precio inválido");
+                            return;
+                        }
+                        String pantallaN = request.getParameter("txtPantalla");
+                        String resolucionN = request.getParameter("txtResolucion");
+
+                        // Supongamos que el nombre es el criterio para buscar el producto a actualizar
+                        String nombreCondicion = request.getParameter("txtNombreCondicion"); // Puedes cambiar esto si usas otro criterio
+
+                        // Llamamos al método actualizarProductos con todos los parámetros
+                        if (OperacionesCrud.actualizarProductos(conexion, nombreN, marcaN, modeloN, precioN, pantallaN, resolucionN, nombreCondicion)) {
+                            out.println("OK: ACTUALIZADO");
+                        } else {
+                            out.println("ERROR AL ACTUALIZAR");
+                        }
+                        break;
 
                 }
 
             } else {
                 out.println("ERROR:CONEXION");
             }
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet ServletCrud</title>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet ServletCrud at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
         }
     }
 
